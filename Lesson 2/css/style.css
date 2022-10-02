@@ -1,0 +1,27 @@
+body{
+    font-size: 18px;
+    font-family: arial;
+    
+}
+
+h1, h2{
+    text-align: center;
+}
+
+code, .code{
+    background-color: rgb(213, 213, 213);
+    
+}
+
+pre{
+    padding: 5px 5px 5px 5px;
+}
+
+.tags{
+    color: rgb(152, 152, 255);
+}
+
+.tags a{
+    background-color: lightblue;
+    padding: 2px;
+}
