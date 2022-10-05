@@ -15,6 +15,7 @@ code, .code{
 
 pre{
     padding: 5px 5px 5px 5px;
+    color: brown;
 }
 
 .tags{
@@ -24,4 +25,8 @@ pre{
 .tags a{
     background-color: lightblue;
     padding: 2px;
+}
+
+span{
+    color: black;
 }
