@@ -1,0 +1,121 @@
+body{
+    font-size: 18px;
+}
+
+.ordered_list{
+    background-color: rgb(226, 106, 130);
+    padding: 10px 10px 10px 10px;
+    list-style: none; 
+    counter-reset: li;
+    color: white;
+    font-size: 18px;
+    
+    
+}
+
+.ordered_list li{
+    background-color: rgb(209, 67, 96);
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 10px;
+    padding: 10px 10px 10px 10px;
+    
+   
+}
+
+.ordered_list li::before {content: counter(li) "."; 
+    background-color: rgb(209, 67, 96);
+    width: 100%;
+    margin-left: 10px;
+    padding: 0px 0px 0px 0px
+}
+    
+
+.ordered_list li {counter-increment: li}
+
+/* My to do list */
+
+.mark {
+	margin: 0;
+	margin-left: -6px;
+	padding: 6px 10px;
+	text-align: center;
+	display: inline-block;
+	background-color: #9e354a;
+}
+
+ul {
+	margin: 8px;
+	padding: 0;
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+ul li {
+	padding: 16px 16px 16px 32px;
+}
+
+ul li::before {
+	list-style-image: url("../Image/icons/unchecked_16.png")
+}
+
+.unchecked {
+	list-style-image: url("../Image/icons/unchecked_16.png")
+}
+
+ul li:nth-child(even) {
+	background-color: #97c5d6;
+}
+
+ul li:nth-child(odd) {
+	background-color: #a4d6e7;
+}
+
+.checked {
+	background-color: #e2e2e2;
+	list-style-image: url("../Image/icons/checked_16.png");
+}
+
+ul li::after {
+	content: url("../Image/icons/X.png");
+	padding-left: 15px;
+    
+}
+
+dt {
+	font-style: italic;
+	margin: 30px 0px;
+}
+
+dd {
+	padding: 0;
+	margin: 0;
+}
+
+.definition {
+	color: grey;
+	margin: 5px 0px;
+	padding: 0;
+}
+
+.synonyms {
+    color: blue;
+	margin: 5px 0px;
+	padding: 0;
+	
+}
+
+ol.list2 {
+	margin: 0;
+}
+
+ol.list2 li {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
