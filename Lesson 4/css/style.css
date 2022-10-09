@@ -5,12 +5,15 @@ body{
 
 button{
     text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid gray;
 }
 
 table{
     border-collapse: collapse;
     background-color: white;
     border-radius: 10px;
+    
 }
 
 table td, tr, th{
@@ -49,3 +52,32 @@ thead th:nth-child(1n){
 thead{
     color: white;
 }
+
+thead th{
+    font-weight: 600;
+}
+th ul{
+    padding: 0px;
+}
+th li{
+    list-style-type: none;
+    padding: 0px;
+}
+
+/* plan */
+th li:first-child{
+    margin: -15px 0px 20px 0px;
+}
+
+/* price */
+th li:nth-child(2n){
+    font-size: 24px;
+    font-weight: 900;
+}
+
+/* per month */
+th li:last-child{
+    margin: 0px 0px -20px 0px;
+}
+
+
