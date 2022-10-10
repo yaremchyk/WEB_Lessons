@@ -9,14 +9,14 @@ button{
     border: 1px solid gray;
 }
 
-table{
+.table_1{
     border-collapse: collapse;
     background-color: white;
     border-radius: 10px;
     
 }
 
-table td, tr, th{
+.table_1 td, tr, th{
     width: fit-content;
     min-width: 100px;
     padding: 10px;
@@ -25,59 +25,103 @@ table td, tr, th{
     
 }
 
-td:first-child{
+.table_1 td:first-child{
     text-align: left;
 }
 
-table td:nth-child(1){
+.table_1 td:nth-child(1){
     width: fit-content;
 }
-table td:nth-child(odd){
+.table_1 td:nth-child(odd){
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-table td:nth-child(even){
+.table_1 td:nth-child(even){
     background-color: rgba(0, 0, 0, 0.1);
 
 }
 
-table tr:nth-child(odd){
+.table_1 tr:nth-child(odd){
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-thead th:nth-child(1n){
+.table_1 thead th:nth-child(1n){
     background-color: rgb(148,0,211);
 }
 
-thead{
+.table_1 thead{
     color: white;
 }
 
-thead th{
+.table_1 thead th{
     font-weight: 600;
 }
-th ul{
+.table_1 th ul{
     padding: 0px;
 }
-th li{
+.table_1 th li{
     list-style-type: none;
     padding: 0px;
 }
 
 /* plan */
-th li:first-child{
+.table_1 th li:first-child{
     margin: -15px 0px 20px 0px;
 }
 
 /* price */
-th li:nth-child(2n){
+.table_1 th li:nth-child(2n){
     font-size: 24px;
     font-weight: 900;
 }
 
 /* per month */
-th li:last-child{
+.table_1 th li:last-child{
     margin: 0px 0px -20px 0px;
 }
+
+/*  */
+/* Table 2 */
+
+.table_2{
+    border-collapse: collapse;
+    background-color: white;
+    
+    
+}
+
+.table_2 td, 
+.table_2 tr, 
+.table_2 th{
+    background-color: white;
+    border: 0px solid black;
+    padding: 10px;
+}
+
+.table_2 thead{
+    position:sticky;
+    top: 0px;
+    
+}
+
+.table_2 thead th{
+    background-color: rgba(138, 43, 226, 0.3);
+}
+
+.table_2 tr td:first-child{
+    background-color: rgba(138, 43, 226, 0.3);
+    position:sticky;
+    left: 0px;
+}
+
+.table_2 tr:nth-child(even) td{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table_2 tr td:first-child {
+    background-color: rgba(138, 43, 226, 0.3);
+    font-weight: 600;
+}
+
 
 
