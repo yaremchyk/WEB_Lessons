@@ -36,7 +36,7 @@ button{
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.table_1 td:nth-child(even){
+.table_1 tr:nth-child(odd) td:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.1);
 
 }
