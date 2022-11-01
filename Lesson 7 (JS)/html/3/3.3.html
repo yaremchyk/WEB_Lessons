@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+                let number = 0;
+                let pos = 0;
+                let neg = 0;
+                let zero = 0;
+                let pair = 0;
+                let notpair = 0;
+                for(let i = 0; i < 10; i++)
+                {
+                    number = +prompt('Введіть число');
+                    if (number != NaN)
+                    {
+                        if (number > 0) {pos++;}
+                        if (number < 0) {neg++;}
+                        if (number == 0) {zero++;}
+                        if (number % 2 == 0) {pair++;}
+                        if (number % 2 != 0) {notpair++;}
+                    }
+                }
+                alert(`Positive ${pos} Negative ${neg} Zero ${zero} Even ${pair} Odd ${notpair}`);
+                                
+    </script>
+</head>
+<body>
+    <h1>Java Script</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta ab rem libero alias earum nesciunt ipsa perferendis vitae corporis! Corporis culpa odit aut aperiam quas exercitationem, id perspiciatis? Sunt.</p>
+</body>
+</html>

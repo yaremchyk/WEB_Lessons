@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+                let day = +prompt('Enter day');
+                let month = +prompt('Enter month');
+                let year = +prompt('Enter year');
+                let date = new Date(`${year}-${month}-${day}`);
+                if (date != NaN)
+                {
+                    date.setDate(date.getDate()+1);
+                    alert(`Tommorow date: ${date.toLocaleDateString()}`);
+                }else
+                {
+                    alert("Wrong date");
+                }
+                                
+    </script>
+</head>
+<body>
+    <h1>Java Script</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate soluta ab rem libero alias earum nesciunt ipsa perferendis vitae corporis! Corporis culpa odit aut aperiam quas exercitationem, id perspiciatis? Sunt.</p>
+</body>
+</html>
