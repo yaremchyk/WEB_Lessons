@@ -1,0 +1,65 @@
+.styled-div div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.styled-div div input {
+    margin-right: 65%;
+}
+button {
+    min-height: 30px;
+    margin-top: 10px;
+}
+#styled-button {
+    width: 25%;
+}
+#clear-button {
+    width: 10%;
+    margin-right: 65%;
+}
+
+input {
+    width: 12%;
+}
+
+.first-column {
+    grid-column: 1;
+}
+.second-column {
+    grid-column: 2;
+}
+.third-column {
+    grid-column: 3;
+}
+.fourth-column {
+    grid-column: 4;
+}
+
+.hidden {
+    color: white;
+    border: none;
+}
+
+#search {
+    margin-top: 5px;
+    width: 15%;
+}
+
+#list {
+    display: grid;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#list div {
+    border: 3px solid lightblue;
+    padding: 24px;
+    text-align: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
