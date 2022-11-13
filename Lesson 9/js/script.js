@@ -25,7 +25,7 @@ class BootstrapButton extends Button {
 
 let width = +prompt('width')
 let height = +prompt('height')
-let content = +prompt('content')
-let color = +prompt('color')
+let content = string = prompt('content')
+let color = string = prompt('color')
 
 new BootstrapButton(width, height, content, color).showBtn();
