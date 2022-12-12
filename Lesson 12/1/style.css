@@ -1,0 +1,110 @@
+body {
+    background-color: rgba(192, 63, 17, 0.822);
+    width: 50%;
+    margin: 5% auto;
+}
+
+form {
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form h1 {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+form input {
+    margin: 10px;
+    height: 5vh;
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+form input::placeholder {
+    text-align: center;
+    font-size: large;
+}
+
+form button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 25px;
+    border: 1px solid seagreen;
+    background-color: rgba(39, 214, 39, 0.74);
+    box-shadow: 0px 3px 3px rgb(32, 94, 59);
+    transition: .4s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgba(39, 214, 39, 1);
+}
+
+form a,
+form a:visited {
+    text-decoration: none;
+    color: rgba(192, 63, 17, 0.822);
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form a:active {
+    color: rgba(224, 105, 61, 0.822);
+}
+
+form a {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+div div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#facebook,
+#twitter {
+    padding: 20px;
+    flex-basis: 50%;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    padding-bottom: 25px;
+}
+img {
+    margin-right: 10px;
+    object-position: 0px 6px;
+}
+#facebook {
+    background-color: rgba(0, 13, 255, 1)
+}
+#twitter {
+    background-color: rgba(80, 171, 241, 1)
+}
+#facebook:hover {
+    background-color: rgb(16, 23, 155)
+}
+#twitter:hover {
+    background-color: rgb(62, 138, 196)
+}

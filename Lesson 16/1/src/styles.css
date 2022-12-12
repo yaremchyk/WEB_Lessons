@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  background-color: black;
+}
+header {
+  background-color: darkgoldenrod;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav .link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: orange;
+  padding: 10px;
+}
+nav .link:hover {
+  background-color: darkorange;
+}
+
+article {
+  margin: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  color: white;
+}
+footer {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-top: 10px;
+  float: inline-end;
+}

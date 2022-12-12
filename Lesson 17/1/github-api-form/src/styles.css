@@ -1,0 +1,51 @@
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.infBlock {
+  border: 2px solid gray;
+  font-size: 20px;
+  color: rgb(58, 55, 55);
+  box-shadow: 3px 3px 14px gray;
+  padding: 20px;
+}
+
+#searchInput {
+  margin-left: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.styledDiv {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.valueDiv {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.mainSpan {
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+#firstDiv,
+#secDiv {
+  margin-right: 40px;
+  flex-basis: 50%;
+}
+
+.doubleDiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}

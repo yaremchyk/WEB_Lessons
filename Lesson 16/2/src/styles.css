@@ -1,0 +1,58 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.city {
+  font-size: 30px;
+  color: rgb(0, 153, 255);
+  font-weight: 900;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 0px 1px 10px 0px black;
+  transition: 0.5s;
+}
+
+.city:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.citiesList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+header {
+  background-color: darkgoldenrod;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav .link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: orange;
+  padding: 10px;
+}
+nav .link:hover {
+  background-color: darkorange;
+}

@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.card {
+  font-size: 200px;
+  max-height: 200px;
+  color: rgba(102, 16, 16, 0.815);
+}
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}

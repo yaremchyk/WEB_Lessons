@@ -1,0 +1,113 @@
+body {
+    background: url(https://4kwallpapers.com/images/wallpapers/beach-aerial-view-3840x2160-60.jpg);
+    width: 80%;
+    margin: 5% auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    box-shadow: 0px 0px 20px 5px black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form h2 {
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+form p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+form h2, form p {
+    color: white;
+    margin-left: 20px;
+}
+
+form input, form select, form textarea {
+    margin: 10px;
+    height: 3vh;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+form hr {
+    margin: 10px;
+    border: 1px solid white;
+}
+
+form select {
+    height: 4vh;
+}
+form input::placeholder {
+    font-size: larger;
+    color: rgba(160, 160, 160, 0.411);
+}
+
+form label {
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form label input, form label select, form label textarea, form hr{
+    outline: none;
+}
+
+form label textarea {
+    height: 10vh;
+}
+
+form label span {
+    flex-basis: 20%;
+    text-shadow: 0px 0px 5px black;
+    text-align: left;
+    margin: auto;
+}
+
+#email, #msgSubj, #msg, #submitBtn {
+    flex-basis: 100%;
+}
+
+form label div {
+    flex-basis: 80%;
+    display: flex;
+    
+}
+#firstName, #lastName {
+    flex-basis: 50%;
+}
+
+#phone1, #phone2 {
+    flex-basis: 25%;
+}
+
+#phone3 {
+    flex-basis: 50%;
+}
+
+form hr {
+    size: 10px;
+}
+
+form button {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 25px;
+    border: 2px solid white;
+    background-color: transparent;
+    box-shadow: 0px 2px 5px 1px black;
+    transition: .35s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgba(39, 214, 176, 0.651);
+}

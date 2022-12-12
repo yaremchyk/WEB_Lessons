@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="#" method="post">
+            <div class="toLeft">
+                <h2>Credit card details</h2>
+            </div>
+            <label for="cardNumber">
+                <span>Card Number</span>
+            </label>
+            <div class="flexed">
+                <input type="number" placeholder="1234 5678 9012 3456" id="cardNumber">
+            </div>
+
+            <label for="nameSurname">
+                <span>Name On Card</span>
+            </label>
+            <div class="flexed">
+                <input type="text" placeholder="Name Surname" id="nameSurname">
+            </div>
+
+            <div class="flexed">
+                <div>
+                    <label for="month" id="monthLabel">
+                        <span>Expiry date</span>
+                    </label>
+                    <div class="flexed">
+                        <input type="number" placeholder="02" id="month">
+                        <input type="number" placeholder="2017" id="year">
+                    </div>
+                </div>
+                <div>
+                    <label for="cvv" id="cvvLabel">
+                        <span>CVV / CVN</span>
+                    </label>
+                    <div class="flexed">
+                        <input type="password" placeholder="***" id="cvv">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
