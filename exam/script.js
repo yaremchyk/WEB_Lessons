@@ -1,14 +1,22 @@
 var taskInput = document.getElementById("new-task"); //new-task
+var priority = document.getElementById('prior').selectedIndex;
+var options=document.getElementById('prior').options;
+var deadlineControl = document.querySelector('input[type="date"]');
 var addButton = document.getElementsByTagName("button")[0]; //first button
 var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
 var completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
+var taskDeadline = document.getElementById('deadline').selectedIndex;
+var taskPriority = document.getElementById('priority').selectedIndex;
+var taskPriority = document.getElementById('priority').selectedIndex;
 
 //New Task List Item
 var createNewTaskElement = function(taskString) {
 	//Create List Item
 	var listItem = document.createElement("li");
+	var priority = document.createElement("select");
+	var taskDeadline = document.createElement("p") //deadline
+	var taskPriority = document.createElement("p"); // priority
 
-	
 
 	//input (checkbox)
 	var checkBox = document.createElement("input"); // checkbox
@@ -20,30 +28,50 @@ var createNewTaskElement = function(taskString) {
 	var editButton = document.createElement("button");
 	//button.delete
 	var deleteButton = document.createElement("button");
+	
 
 	//Each element needs modifying
 
 	checkBox.type = "checkbox";
 	editInput.type = "text";
-	
-
+	priority.type = "select";
+	taskDeadline.innerHTML = "Deadline: " + deadlineControl.value;
 	editButton.innerText = "Edit";
 	editButton.className = "edit";
 	deleteButton.innerText = "Delete";
 	deleteButton.className = "delete";
+	taskDeadline.className = "taskDeadline";
+	taskPriority.className = "taskPriority";
 
 	label.innerText = taskString;
+	if (options.selectedIndex = 0) {
+		taskPriority.innerHTML = "Priority: Low";
+	}
+	else if (options.selectedIndex = 1) {
+		taskPriority.innerHTML = "Priority: Medium";
+	}
+	else if (options.selectedIndex = 2) {
+		taskPriority.innerHTML = "Priority: High";
+	}
+
 
 	//Each element needs appending
 	listItem.appendChild(checkBox);
 	listItem.appendChild(label);
-	
 	listItem.appendChild(editInput);
 	listItem.appendChild(editButton);
 	listItem.appendChild(deleteButton);
+	listItem.appendChild(taskDeadline);
+	listItem.appendChild(taskPriority);
 
+	console.log(deadlineControl.value)
+	console.log(options)
+	console.log(options.selectedIndex)
+	
+	
 	return listItem;
 }
+
 
 //Add a new task
 var addTask = function() {
@@ -53,9 +81,12 @@ var addTask = function() {
 	//Append listItem to incompleteTasksHolder
 	incompleteTasksHolder.appendChild(listItem);
 	bindTaskEvents(listItem, taskCompleted);
+	
 
 	taskInput.value = "";
 }
+
+
 
 //Edit an existing task
 var editTask = function() {
@@ -129,11 +160,7 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
 	checkBox.onchange = checkBoxEventHandler;
 }
 
-// var ajaxRequest = function() {
-// 	console.log("AJAX request");
-// }
 
-//Set the click handler to the addTask function
 addButton.addEventListener("click", addTask);
 
 

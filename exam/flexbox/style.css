@@ -1,0 +1,14 @@
+.container{
+    
+    width: 400px;
+    height: 90vh;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.task{
+    background-color: brown;
+    border-radius: 20px;
+    height: 100px;
+    margin-bottom: 5px;
+    display: flex;
+}

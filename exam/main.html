@@ -13,38 +13,40 @@
 		<h3>Add Item</h3>
 		<p>
 			<input id="new-task" type="text"><button>Add</button> <br>
-            <h4>Choose your priority</h4>
+			<ul id="options">
+				<li>
+					<h4>Choose your priority</h4>
             
-                <div>
+                
                 <select id="prior">
                     <option>Low</option>
 					<option>Medium</option>
 					<option>High</option>
-                </select> <br>
-            <h4>Enter your deadline</h4>
-            <input type="date" id="start" name="trip-start" value="2022-07-22" min="2022-01-01" max="2023-12-31">
+                </select>
+				</li>
+				<li>
+					<h4>Enter your deadline</h4>
+            <input id="date" type="date" value="2022-06-01">
+				</li>
+			</ul>
+            
 
 		</p>
 
 		<h3>Todo</h3>
 		<ul id="incomplete-tasks">
-			<li><input type="checkbox"><label>Buy a cofee</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-			<li><input type="checkbox"><label>Visit the granny</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+			
+			<p id="deadline"></p>
+			<p id="priority"></p>
 		</ul>
 
 		<h3>Completed</h3>
 		<ul id="completed-tasks">
-			<li><input type="checkbox" checked><label>Go shopping</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
 		</ul>
 	</div>
     <script src="script.js"></script>
 </body>
 
-<!-- <span>Message subject *</span>
-                <div>
-                <select id="msgSubj">
-                    <option>Other</option>
-                </select>
-                </div> -->
+
 
 </html>

@@ -48,7 +48,7 @@ button {
 	color: #888;
 	font-size: 15px;
 	width: 60px;
-	margin: 10px 0 0;
+	margin: 10px 0px 0;
 	font-family: Lato, sans-serif;
 	cursor: pointer;
 }
@@ -110,21 +110,36 @@ p > button:hover {
 
 li {
 	overflow: hidden;
-	padding: 20px 0;
+	padding: 20px 0px 20px 20px;
+	margin-bottom: 10px ;
 	border-bottom: 1px solid #eee;
+	border-radius: 20px;
+}
+
+#incomplete-tasks li, #completed-tasks li{
+	background-color: antiquewhite;
+
+}
+
+#options li{
+	padding: 0px 0px 0px 0px;
 }
 
 li > input[type="checkbox"] {
-	margin: 0 10px;
+	margin: 9px 10px 0 0;
 	position: relative;
-	top: 15px;
+	top: 5px;
 }
 
 li > label {
 	font-size: 18px;
 	line-height: 40px;
 	width: 237px;
-	padding: 0 0 0 11px;
+	padding: -10px 0 0px 11px;
+}
+
+li > input{
+	margin: ;
 }
 
 li > input[type="text"] {
@@ -156,4 +171,30 @@ ul li.editMode input[type=text] {
 
 ul li.editMode label {
 	display: none;
+}
+
+#date, #prior{
+	margin: 22px 5px 0px 10px;
+
+}
+
+#incomplete-tasks li > input[type="date"]{
+	margin: -20px 0px 0px -100px;
+	padding: 0px 0px 0px 0px;
+	background-color: antiquewhite;
+}
+
+input[type="text"]{
+	width: 200px;
+}
+
+.taskDeadline {
+	color: rgb(248, 55, 55);
+	margin: 0px 0px 0px 22px;
+}
+
+.taskPriority{
+	font-family: Arial, Helvetica, sans-serif;
+	color: blue;
+	margin: 22px 0px 0px -154px;
 }
