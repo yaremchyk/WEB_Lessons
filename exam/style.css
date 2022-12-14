@@ -195,6 +195,6 @@ input[type="text"]{
 
 .taskPriority{
 	font-family: Arial, Helvetica, sans-serif;
-	color: blue;
+	color: rgb(72, 72, 251);
 	margin: 22px 0px 0px -154px;
 }

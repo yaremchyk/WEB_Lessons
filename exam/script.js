@@ -1,13 +1,13 @@
 var taskInput = document.getElementById("new-task"); //new-task
 var priority = document.getElementById('prior').selectedIndex;
-var options=document.getElementById('prior').options;
+var options = document.getElementById('prior').options;
 var deadlineControl = document.querySelector('input[type="date"]');
 var addButton = document.getElementsByTagName("button")[0]; //first button
 var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
 var completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
 var taskDeadline = document.getElementById('deadline').selectedIndex;
 var taskPriority = document.getElementById('priority').selectedIndex;
-var taskPriority = document.getElementById('priority').selectedIndex;
+
 
 //New Task List Item
 var createNewTaskElement = function(taskString) {
@@ -29,7 +29,9 @@ var createNewTaskElement = function(taskString) {
 	//button.delete
 	var deleteButton = document.createElement("button");
 	
-
+	
+	
+	
 	//Each element needs modifying
 
 	checkBox.type = "checkbox";
@@ -44,16 +46,20 @@ var createNewTaskElement = function(taskString) {
 	taskPriority.className = "taskPriority";
 
 	label.innerText = taskString;
+	
+
 	if (options.selectedIndex = 0) {
 		taskPriority.innerHTML = "Priority: Low";
+		
 	}
 	else if (options.selectedIndex = 1) {
 		taskPriority.innerHTML = "Priority: Medium";
+		
 	}
 	else if (options.selectedIndex = 2) {
 		taskPriority.innerHTML = "Priority: High";
+		
 	}
-
 
 	//Each element needs appending
 	listItem.appendChild(checkBox);
